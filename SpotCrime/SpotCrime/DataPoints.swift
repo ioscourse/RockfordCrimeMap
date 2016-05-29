@@ -36,7 +36,11 @@ class DataPoints: NSObject,MKAnnotation{
          let time:String! = dataDictionary["occurred_on_time"] as! String
         ////
         
+<<<<<<< Updated upstream
         
+=======
+       
+>>>>>>> Stashed changes
             let location:NSDictionary! = dataDictionary.objectForKey("geom") as! NSDictionary!
             if location != nil{
                 let type:String! = location.objectForKey("type") as! String!
@@ -48,8 +52,13 @@ class DataPoints: NSObject,MKAnnotation{
             }
 
             }
+<<<<<<< Updated upstream
             
       
+=======
+               //////
+
+>>>>>>> Stashed changes
                 let pddDistrict = dataDictionary["offense_description"] as! String
         
                 let titleForPoint:String! = "\(date):\(time)"
